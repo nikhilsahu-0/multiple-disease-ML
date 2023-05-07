@@ -8,6 +8,7 @@
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #d1cdc7;
   }
   h1 {
     text-align: center;
@@ -25,20 +26,49 @@
       Smart Disease Predictor</span
     >
     <img
-      style="float: right" 
+      style="float: right; height: 300px; width: 400px"
       src="{{ url_for('static', filename = 'banner_img.png') }}"
     />
   </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
   <div class="model-accuracies">
-  <h2>Model Accuracies:</h2>
-  <ul>
-    <li>Diabetes Model: <strong>92.54%</strong></li>
-    <li>Heart Disease Model: <strong>98.70%</strong></li>
-    <li>Breast Cancer Model: <strong>97.66%</strong></li>
-    <li>Kidney Disease Model: <strong>99.16%</strong></li>
-    <li>Liver Disease Model: <strong>71.18%</strong></li>
-  </ul>
- </div>
+    <h2>Model Accuracies:</h2>
+    <ul>
+      <li>Diabetes Model: <strong>90.38%</strong> (Xg​Boost)</li>
+      <li>
+        Heart Disease Model: <strong>98.09%</strong>(Gradient Boosting
+        Classification)
+      </li>
+      <li>
+        Breast Cancer Model: <strong>98.67%</strong>(Support Vector Machine​)
+      </li>
+      <li>
+        Kidney Disease Model: <strong>97.40%</strong> (Gradient Boosting
+        Classification)
+      </li>
+      <li>
+        Liver Disease Model: <strong>72.92%</strong> (Logistic Regression)
+      </li>
+    </ul>
+  </div>
+
+  <div class="model-accuracies">
+    <h2>Algorithms Used:</h2>
+    <ol>
+      <li>Support Vector Machine​</li>
+      <li>Gradient Boosting Classification</li>
+      <li>Logistic Regression</li>
+      <li>Random Forest Classification</li>
+      <li>Decision Tree Classification</li>
+      <li>Xg​Boost</li>
+      <li>K-Nearest-Neighbour</li>
+    </ol>
+  </div>
 
   <h3>Information about the Diseases:</h3>
 
